@@ -3,15 +3,15 @@ public class piece {
     // Will have general class and then each piece will extend this.
     private char type;
 
-    public piece(){
+    public piece() {
         this('P');
     }
 
-    public piece(char t){
+    public piece(char t) {
         type = t;
     }
 
-    public String toString(){
-        return ""+type;
+    public String toString() {
+        return "" + type;
     }
 }

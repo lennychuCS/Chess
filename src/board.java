@@ -13,11 +13,11 @@ public class board {
     private boolean[] castlesLeft = new boolean[4];
     private String enPassantSquare;
 
-    public board(){
+    public board() {
         this(STARTING_POS);
     }
 
-    public board(String fen){
+    public board(String fen) {
         frame = new chessWindow();
 
         String[] splitFen = fen.split(" ");
@@ -42,22 +42,22 @@ public class board {
         fullMoveCount = Integer.parseInt(splitFen[5]);
     }
 
-    private void placesPiecesFromFen(String fen){
-        for(int rank = 0; rank < BOARD_SIZE; rank++){
-            for(int file = 0; file < BOARD_SIZE; file++){
+    private void placesPiecesFromFen(String fen) {
+        for (int rank = 0; rank < BOARD_SIZE; rank++) {
+            for (int file = 0; file < BOARD_SIZE; file++) {
                 board[rank][file] = null;
             }
         }
 
         String[] splitFen = fen.split("/");
 
-        for(int rank = 0; rank < BOARD_SIZE; rank++){
+        for (int rank = 0; rank < BOARD_SIZE; rank++) {
             int file = 0;
             String curString = splitFen[rank];
-            while(file < BOARD_SIZE){
-                String temp = curString.substring(0,1);
+            while (file < BOARD_SIZE) {
+                String temp = curString.substring(0, 1);
                 curString = curString.substring(1);
-                if(temp.matches("[0-9]")){
+                if (temp.matches("[0-9]")) {
                     file += Integer.parseInt(temp);
                 } else {
                     board[rank][file] = new piece(temp.charAt(0));
@@ -67,43 +67,44 @@ public class board {
         }
     }
 
-    public piece getSquare(int rank, int file){
-        if(rank < 0 || rank > BOARD_SIZE-1 || file < 0 || file > BOARD_SIZE-1){
+    public piece getSquare(int rank, int file) {
+        if (rank < 0 || rank > BOARD_SIZE - 1 || file < 0 || file > BOARD_SIZE - 1) {
             throw new IllegalArgumentException("Out of bounds of Board");
         }
 
         return board[rank][file];
     }
 
-    public char getCurrentTurn(){
+    public char getCurrentTurn() {
         return whitesTurn ? 'w' : 'b';
     }
 
-    public int getCurrentMoveNumber(){
+    public int getCurrentMoveNumber() {
         return fullMoveCount;
     }
 
-    public int getHalfMoveCount(){
+    public int getHalfMoveCount() {
         return halfMoveCount;
     }
 
-    public String getEnPassantSquare(){
+    public String getEnPassantSquare() {
         return enPassantSquare;
     }
 
-    public piece[][] getBoard(){
+    public piece[][] getBoard() {
         return board;
     }
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for(int rank = 0; rank < BOARD_SIZE; rank++){
-            for(int file = 0; file < BOARD_SIZE; file++){
-                if(board[rank][file] != null){
+        for (int rank = 0; rank < BOARD_SIZE; rank++) {
+            for (int file = 0; file < BOARD_SIZE; file++) {
+                if (board[rank][file] != null) {
                     sb.append(board[rank][file].toString());
                 } else {
                     sb.append(" ");
-                } if(file != BOARD_SIZE-1){
+                }
+                if (file != BOARD_SIZE - 1) {
                     sb.append(",");
                     sb.append(" ");
                 }

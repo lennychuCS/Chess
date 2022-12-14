@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b050bdd6-6048-4c9c-b4e4-a0e0f5058c7f" name="Changes" comment="Added base board code. Accessors, toString, and constructors successfully created.">
-      <change afterPath="$PROJECT_DIR$/imageAssets/blackBishop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imageAssets/blackKing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imageAssets/blackKnight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imageAssets/blackPawn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imageAssets/blackQueen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imageAssets/blackRook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imageAssets/whiteBishop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imageAssets/whiteKing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imageAssets/whiteKnight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imageAssets/whitePawn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imageAssets/whiteQueen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imageAssets/whiteRook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chessWindow.java" afterDir="false" />
+    <list default="true" id="b050bdd6-6048-4c9c-b4e4-a0e0f5058c7f" name="Changes" comment="Added code to create window/draw board base and added images for pieces.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670913316723</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added code to create window/draw board base and added images for pieces.">
+      <created>1671048631008</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671048631008</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +94,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created Project" />
     <MESSAGE value="Added base board code. Accessors, toString, and constructors successfully created." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added base board code. Accessors, toString, and constructors successfully created." />
+    <MESSAGE value="Added code to create window/draw board base and added images for pieces." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added code to create window/draw board base and added images for pieces." />
   </component>
 </project>
